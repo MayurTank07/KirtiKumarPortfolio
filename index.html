@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KirtiKumar Portfolio</title>
+    <title>KirtiKumar | Portfolio</title>
+
+    <link rel="icon" href="/static/logo/favicon.ico" type="image/x-icon">
 
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,6 +18,9 @@
 
     <!-- FONT CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ANIMATION CSS -->
+    <link rel="stylesheet" href="/css/animation.css">
 
 
 </head>
@@ -55,26 +60,35 @@
 
     </div>
 
-    <div id="carousal">
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/static/img/carousal/caro3.jpg" class="d-block w-100" alt="..." height="650px"
-                        width="100%">
-                    <!-- Overlay -->
-                    <div class="carousel-overlay">
-                        <div class="carousel-content">
-                            <h1 class="carousel-title">Hi, I'm Kirti Kumar</h1>
-                            <p class="carousel-desc">
-                                Passionate developer creating modern and responsive websites
-                            </p>
-                            <span class="carousel-role">Web Developer</span>
-                        </div>
+<div id="carousal">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/img/carousal/caro3.jpg"
+                     class="d-block w-100 img-fluid carousel-img"
+                     alt="Hero Image">
+
+                <!-- Overlay -->
+                <div class="carousel-overlay">
+                    <div class="carousel-content text-center text-md-start">
+                        <h1 class="carousel-title">
+                            Hi, I’m <span>KirtiKumar</span>
+                        </h1>
+
+                        <p class="carousel-desc">
+                            Web Developer crafting modern, responsive, and user-friendly websites.
+                        </p>
+
+                        <span class="carousel-role">
+                            Web Developer
+                        </span>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+</div>
 
 
     <div id="about" class="container marketing py-lg-5">
@@ -87,20 +101,23 @@
                 <button class="btn btn-outline-primary">Contact Me</button>
             </div>
             <div class="col-md-5">
-                <img src="/static/img/person/person.jpg" alt="person" height="300px" width="auto">
+                <img src="/static/img/person/person.jpg"
+     alt="person"
+     class="img-fluid"
+     style="max-height:300px;">
             </div>
         </div>
     </div>
 
-
     <div id="projects">
-
+        <div class="container">
         <div class="row py-lg-5 text-center bg-body-tertiary">
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h1 class="fw-light display-5 project-heading d-inline-block">
                     My Projects
                 </h1>
                 <div class="mx-auto mt-2" style="width:80px; height:3px; background:#0d6efd;"></div>
+            </div>
             </div>
         </div>
 
@@ -158,9 +175,88 @@
         </div>
     </div>
 
+    <div id="mystack">
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">My Stack</h2>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('/static/img/mystack/htmlbg.webp');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">HyperText Markup Language</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto"> 
+                                    <img src="/static/img/mystack/html.png" alt="Bootstrap" width="32"
+                                        height="32" class="rounded-circle border border-white"> 
+                                </li>
+                                <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em"
+                                        height="1em" role="img" aria-label="Location">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg> <small>HTML</small> </li>
+                                <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
+                                        role="img" aria-label="Duration">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>  </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('/static/img/mystack/cssbg.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Cascading Style Sheet</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto"> <img src="/static/img/mystack/css.png" alt="Bootstrap" width="32"
+                                        height="32" class="rounded-circle border border-white"> </li>
+                                <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em"
+                                        height="1em" role="img" aria-label="Location">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg> <small>CSS</small> </li>
+                                <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
+                                        role="img" aria-label="Duration">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>  </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('/static/img/mystack/bootstrapbg.jpeg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bootstrap</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto"> <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
+                                        height="32" class="rounded-circle border border-white"> </li>
+                                <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em"
+                                        height="1em" role="img" aria-label="Location">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg> <small>bootstrap</small> </li>
+                                <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
+                                        role="img" aria-label="Duration">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>  </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="footer">
-        <div class="container"> <footer class="py-3 my-4"> <ul class="nav justify-content-center border-bottom pb-3 mb-3"> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Projects</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>  </ul> <p class="text-center text-body-secondary">© 2025 KirtiKumar Portfolio</p> </footer> </div>
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Projects</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+                </ul>
+                <p class="text-center text-body-secondary">© 2025 KirtiKumar Portfolio</p>
+            </footer>
+        </div>
     </div>
 
     <!-- JS BOOTSTRAP -->

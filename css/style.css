@@ -1,3 +1,11 @@
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
 /* Navbar container STARTED */
 .navbar-custom {
   background: rgba(255, 255, 255, 0.85);
@@ -149,3 +157,37 @@
 
 
 /* FONT CSS ENDED*/
+
+
+/* ABOUT CSS */
+
+#hero {
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.featurette-heading {
+    font-weight: 600;
+}
+
+.featurette img {
+    transition: transform 0.3s ease;
+}
+
+.featurette img:hover {
+    transform: scale(1.03);
+}
+
+.hero-image-wrapper {
+    max-height: 260px;      /* controls how much of image is visible */
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.hero-image-wrapper img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transform: translateY(-20%);
+}
+
+

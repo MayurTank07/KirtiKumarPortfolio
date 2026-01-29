@@ -1,0 +1,223 @@
+/* =========================
+   GLOBAL ANIMATIONS
+   ========================= */
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  animation: pageFade 0.8s ease-in-out;
+}
+
+/* Page fade */
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+  animation: navSlide 0.7s ease-in-out;
+}
+
+@keyframes navSlide {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   HERO / CAROUSEL
+   ========================= */
+
+.carousel-title {
+  animation: heroTitle 1s ease forwards;
+}
+
+.carousel-desc {
+  animation: heroDesc 1.2s ease forwards;
+}
+
+.carousel-role {
+  animation: heroBadge 1.4s ease forwards;
+}
+
+@keyframes heroTitle {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroDesc {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroBadge {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =========================
+   SECTIONS (ABOUT / PROJECTS / STACK)
+   ========================= */
+
+section,
+#about,
+#projects,
+#mystack,
+#content {
+  animation: sectionFade 1s ease-in-out;
+}
+
+@keyframes sectionFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   CARDS (Projects, Skills, Stack)
+   ========================= */
+
+.card,
+.feature,
+.card-cover {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover,
+.feature:hover,
+.card-cover:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.btn {
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.4);
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* =========================
+   CONTACT FORM
+   ========================= */
+
+.contact-form {
+  animation: formSlide 0.9s ease-in-out;
+}
+
+@keyframes formSlide {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  transform: scale(1.01);
+}
+
+/* =========================
+   IMAGES
+   ========================= */
+
+img {
+  transition: transform 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  animation: footerFade 1.2s ease-in-out;
+}
+
+@keyframes footerFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
+
+@media (max-width: 768px) {
+  .carousel-title {
+    animation-duration: 0.8s;
+  }
+
+  .card:hover,
+  .feature:hover {
+    transform: translateY(-5px);
+  }
+}
